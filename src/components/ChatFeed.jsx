@@ -14,6 +14,13 @@ import TheirMessage from "./TheirMessage";
     const renderMessages = () => {
         const keys = Object.keys(messages);
 
+    return keys.map((key, index) =>  {
+        const message = messages[key];
+        const lastMessage = index === 0 ? null : keys [index-1];
+        const IsMyMessage = userName=== message.sender.username;
+
+    }
+
         
 
 renderMessages()
